@@ -30,6 +30,9 @@
     { img:'certificate/pic1.jpeg', title:'Artificial Intelligence — Course Completion',
       issuer:'EDU TANTR', date:'2025', cat:'certification',
       skills:['AI Fundamentals','ML'] }
+     { img:'certificate/pic8.jpeg', title:'Java Full Stack - TalentNext Program',
+       issuer:'Wipro TalentNext',date:'2026', cat:'certification',
+       skills:['Java','Full Stack Development','Spring Boot','SQL','Web Development']},
   ];
 
   /* ---------------- Preloader ---------------- */
