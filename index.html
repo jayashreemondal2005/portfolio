@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Jayashree Mondal — AI/ML enthusiast, Software Developer & B.Tech IT student. Portfolio showcasing projects, skills & certifications." />
   <meta name="author" content="Jayashree Mondal" />
+  <meta name="theme-color" content="#7c3aed" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jayashreemondal-portfolio.netlify.app/" />
+  <meta property="og:title" content="Jayashree Mondal — AI/ML & Software Developer" />
+  <meta property="og:description" content="B.Tech IT student building AI/ML, web and full-stack projects. Projects, skills, certifications and contact." />
+  <link rel="canonical" href="https://jayashreemondal-portfolio.netlify.app/" />
   <title>Jayashree Mondal — AI/ML Developer</title>
+  <script>
+    // apply the saved theme before first paint so dark mode doesn't flash white
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('jm-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230d0818'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='62' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EJ%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,7 +104,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>
         </button>
 
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="nav" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -121,10 +132,10 @@
         </div>
 
         <div class="hero__stats" id="statsRow">
-          <div class="stat"><span class="stat__num" data-count="7">0</span><span class="stat__label">Certifications</span></div>
-          <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Key Projects</span></div>
-          <div class="stat"><span class="stat__num" data-count="7">0</span><span class="stat__label">Languages &amp; Tools</span></div>
-          <div class="stat"><span class="stat__num" data-count="16" data-suffix="+">0</span><span class="stat__label">Google Badges</span></div>
+          <div class="stat"><span class="stat__num" data-count="8" data-stat="certs">8</span><span class="stat__label">Certifications</span></div>
+          <div class="stat"><span class="stat__num" data-count="5" data-stat="projects">5</span><span class="stat__label">Key Projects</span></div>
+          <div class="stat"><span class="stat__num" data-count="20" data-stat="tools" data-suffix="+">20+</span><span class="stat__label">Languages &amp; Tools</span></div>
+          <div class="stat"><span class="stat__num" data-count="16" data-suffix="+">16+</span><span class="stat__label">Google Badges</span></div>
         </div>
       </div>
 
@@ -226,6 +237,29 @@
 
       <div class="timeline">
         <div class="tl-item reveal">
+          <div class="tl-dot"><span>☕</span></div>
+          <div class="tl-card">
+            <span class="tl-date">Jul 2026 – Oct 2026</span>
+            <h3 class="tl-title">Java Full Stack — TalentNext Program</h3>
+            <span class="tl-org">Wipro TalentNext • Digital Skills Readiness Program</span>
+            <p>Completed Wipro's TalentNext course on Java Full Stack — Java, Spring Boot, SQL and
+              full-stack web development — as part of the Digital Skills Readiness Program.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"><span>🛠️</span></div>
+          <div class="tl-card">
+            <span class="tl-date">2025 – 2026</span>
+            <h3 class="tl-title">Independent Projects</h3>
+            <span class="tl-org">Angular • TypeScript • Python • Gemini API</span>
+            <p>Built and shipped my own projects — a website accessibility &amp; performance checker,
+              a finance storytelling app, a multi-agent chatbot and a face-mask detector — and deployed
+              the web apps on Netlify.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
           <div class="tl-dot"><span>💼</span></div>
           <div class="tl-card">
             <span class="tl-date">Aug 2025 – Nov 2025</span>
@@ -306,19 +340,27 @@
           <h3 class="skills__heading"><span class="skills__ico">🛠️</span> Tools &amp; Platforms</h3>
           <div class="skills__chips">
             <span class="tech-chip">Python</span>
+            <span class="tech-chip">Java</span>
             <span class="tech-chip">C++</span>
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">TypeScript</span>
             <span class="tech-chip">Dart</span>
+            <span class="tech-chip">Angular</span>
+            <span class="tech-chip">Node.js</span>
             <span class="tech-chip">Flutter</span>
             <span class="tech-chip">React Native</span>
             <span class="tech-chip">HTML5</span>
             <span class="tech-chip">CSS3</span>
             <span class="tech-chip">TensorFlow</span>
             <span class="tech-chip">OpenCV</span>
+            <span class="tech-chip">Streamlit</span>
+            <span class="tech-chip">Gemini API</span>
             <span class="tech-chip">NLP</span>
             <span class="tech-chip">Oracle Cloud</span>
             <span class="tech-chip">Microsoft Azure</span>
             <span class="tech-chip">Google Cloud</span>
             <span class="tech-chip">Vertex AI</span>
+            <span class="tech-chip">Netlify</span>
             <span class="tech-chip">Kaggle</span>
             <span class="tech-chip">Git &amp; GitHub</span>
           </div>
@@ -340,26 +382,28 @@
       <div class="section__head reveal">
         <span class="section__kicker">04 — Projects</span>
         <h2 class="section__title">Featured <span class="grad">Projects</span></h2>
-        <p class="section__lead">A selection of projects where I applied AI/ML and full-stack development.</p>
+        <p class="section__lead">Things I have built — from AI/ML and computer vision to full-stack web apps.</p>
       </div>
 
       <div class="projects">
         <article class="project reveal">
           <div class="project__icon" style="--pc:#8b5cf6">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/><circle cx="12" cy="14" r="1.2"/></svg>
           </div>
-          <h3 class="project__title">Face Mask Detection System</h3>
-          <p class="project__desc">A real-time computer-vision model that detects face masks accurately.
-            Trained with Python and image-processing libraries for high accuracy, built for public-safety monitoring.</p>
+          <h3 class="project__title">Fresnel — Website Accessibility &amp; Performance Checker</h3>
+          <p class="project__desc">Paste a GitHub repo URL and Fresnel audits the source for Performance, Accessibility,
+            Best Practices, SEO and common security issues. Every finding comes with a ready-to-apply Git diff, a
+            downloadable <code>.patch</code> file and a one-line PR command. It can also read a Lighthouse JSON report
+            and trace failing audits back to the code.</p>
           <div class="project__tags">
-            <span>Python</span><span>OpenCV</span><span>Computer Vision</span><span>AI / ML</span>
+            <span>Angular 19</span><span>TypeScript</span><span>Node.js</span><span>Netlify Functions</span><span>Lighthouse</span>
           </div>
           <div class="project__links">
-            <a href="https://face-mask-detection-by-jayashree.netlify.app/" target="_blank" rel="noopener" class="project__link project__link--demo">
+            <a href="https://website-performance-checker.netlify.app/" target="_blank" rel="noopener" class="project__link project__link--demo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
               Live Demo
             </a>
-            <a href="https://github.com/jayashreemondal2005/Face_mask_detection" target="_blank" rel="noopener" class="project__link">
+            <a href="https://github.com/jayashreemondal2005/Website-Accessibility-Performance-Checker" target="_blank" rel="noopener" class="project__link">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
               Code
             </a>
@@ -368,20 +412,21 @@
 
         <article class="project reveal">
           <div class="project__icon" style="--pc:#22d3ee">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9h6M7 13h4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
           </div>
-          <h3 class="project__title">Online Examination System</h3>
-          <p class="project__desc">A secure, scalable digital platform for online assessments, quizzes and exams —
-            with automated grading, time limits and friendly dashboards for both students and administrators.</p>
+          <h3 class="project__title">Finance Story — Managed Agent</h3>
+          <p class="project__desc">Turns a Google Drive folder, Google Sheet, Excel workbook or CSV ledger into an animated,
+            chapter-by-chapter story of where the money went — plus a day-by-day explorer and a plain-English question box
+            powered by Gemini. The data pipeline (parse → clean → categorise → reconcile) is covered by Vitest tests.</p>
           <div class="project__tags">
-            <span>Web Development</span><span>Full-Stack</span><span>Dashboards</span><span>Security</span>
+            <span>TypeScript</span><span>Vite</span><span>PixiJS</span><span>GSAP</span><span>Gemini API</span><span>Vitest</span>
           </div>
           <div class="project__links">
-            <a href="https://online-examination-web-by-jayashree.netlify.app/" target="_blank" rel="noopener" class="project__link project__link--demo">
+            <a href="https://finance-story-managed-agent.netlify.app/" target="_blank" rel="noopener" class="project__link project__link--demo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
               Live Demo
             </a>
-            <a href="https://github.com/jayashreemondal2005/Online_examination_system" target="_blank" rel="noopener" class="project__link">
+            <a href="https://github.com/jayashreemondal2005/Finance-Story---Managed-Agent" target="_blank" rel="noopener" class="project__link">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
               Code
             </a>
@@ -392,14 +437,57 @@
           <div class="project__icon" style="--pc:#f472b6">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
           </div>
-          <h3 class="project__title">NLP-based AI Chatbot</h3>
-          <p class="project__desc">An intelligent conversational agent using Natural Language Processing to understand
-            and respond to user queries with automated, context-aware replies — improving engagement and support efficiency.</p>
+          <h3 class="project__title">Amazebot — Multi-Agent Chatbot</h3>
+          <p class="project__desc">A Streamlit chatbot that routes each question to a Research agent or a Summarizer agent.
+            It corrects spelling, detects the language and translates replies, lets you edit earlier messages, share
+            chats and export them to PDF — and drops into an offline demo mode when no Gemini key is set.</p>
           <div class="project__tags">
-            <span>NLP</span><span>Python</span><span>AI</span><span>Chatbot</span>
+            <span>Python</span><span>Streamlit</span><span>Gemini API</span><span>NLP</span><span>Multi-Agent</span>
           </div>
           <div class="project__links">
-            <a href="https://github.com/jayashreemondal2005" target="_blank" rel="noopener" class="project__link">
+            <a href="https://github.com/jayashreemondal2005/Amazebot" target="_blank" rel="noopener" class="project__link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__icon" style="--pc:#f59e0b">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/></svg>
+          </div>
+          <h3 class="project__title">Face Mask Detection</h3>
+          <p class="project__desc">Real-time mask / no-mask detection on a live webcam feed. Faces are found with an OpenCV
+            Haar cascade and classified by a MobileNetV2 model fine-tuned with TensorFlow/Keras. The repo includes the
+            training script, the trained model and the accuracy/loss plot.</p>
+          <div class="project__tags">
+            <span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>MobileNetV2</span><span>Computer Vision</span>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/jayashreemondal2005/Face_mask_detection" target="_blank" rel="noopener" class="project__link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+              Code
+            </a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__icon" style="--pc:#10b981">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9h6M7 13h4"/></svg>
+          </div>
+          <h3 class="project__title">Online Examination System</h3>
+          <p class="project__desc">A multi-page exam portal with separate student and admin flows. Admins set question papers
+            and schedule exams; students take timed tests with answers saved as they go, a question palette to jump around,
+            then check results and download a grade card as PDF. Runs fully in the browser using localStorage.</p>
+          <div class="project__tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>localStorage</span>
+          </div>
+          <div class="project__links">
+            <a href="https://online-examination-web-by-jayashree.netlify.app/" target="_blank" rel="noopener" class="project__link project__link--demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/jayashreemondal2005/Online_examination_system" target="_blank" rel="noopener" class="project__link">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
               Code
             </a>
@@ -424,10 +512,10 @@
       </div>
 
       <div class="cert-filters reveal" id="certFilters">
-        <button class="cert-filter active" data-filter="all">All</button>
-        <button class="cert-filter" data-filter="certification">Certifications</button>
-        <button class="cert-filter" data-filter="internship">Internship</button>
-        <button class="cert-filter" data-filter="badge">Badges</button>
+        <button type="button" class="cert-filter active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="cert-filter" data-filter="certification" aria-pressed="false">Certifications</button>
+        <button type="button" class="cert-filter" data-filter="internship" aria-pressed="false">Internship</button>
+        <button type="button" class="cert-filter" data-filter="badge" aria-pressed="false">Badges</button>
       </div>
 
       <div class="certs" id="certGrid"><!-- injected by JS --></div>
@@ -526,14 +614,14 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
       </button>
       <div class="lightbox__stage" id="lbStage">
-        <img id="lbImg" src="" alt="Certificate" />
+        <img id="lbImg" src="data:," alt="Certificate" />
       </div>
       <div class="lightbox__meta">
         <div class="lightbox__meta-text">
           <h3 id="lbTitle"></h3>
           <p id="lbSub"></p>
         </div>
-        <a id="lbDownload" class="btn btn--ghost btn--sm" href="" download target="_blank" rel="noopener">
+        <a id="lbDownload" class="btn btn--ghost btn--sm" href="#" target="_blank" rel="noopener">
           Open full size
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
         </a>
@@ -546,7 +634,7 @@
     <div class="tour__spot" id="tourSpot"></div>
     <div class="tour__pop" id="tourPop">
       <div class="tour__head">
-        <span class="tour__step" id="tourStep">1 / 8</span>
+        <span class="tour__step" id="tourStep"></span>
         <button class="tour__skip" id="tourSkip">Skip</button>
       </div>
       <h4 class="tour__title" id="tourTitle"></h4>
